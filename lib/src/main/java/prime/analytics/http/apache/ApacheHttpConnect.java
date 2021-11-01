@@ -55,7 +55,7 @@ public class ApacheHttpConnect {
             StatusLine status = res.getStatusLine();
             System.out.printf("Response status: %s%n", status);
 
-            return responseCode;
+            return status.getStatusCode();
         } finally {
         }
     }
